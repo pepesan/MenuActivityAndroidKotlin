@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.cursosdedesarrollo.menuactivityandroidkotlin.MainActivity">
+
+    <item
+        android:id="@+id/edit_main_menu"
+        android:orderInCategory="200"
+        android:title="@string/edit_text"
+        android:icon="@drawable/ic_edit_white_24dp"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/add_main_menu"
+        android:orderInCategory="100"
+        android:title="@string/add_text"
+        android:icon="@drawable/ic_add_white_24dp"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/remove_main_menu"
+        android:icon="@drawable/ic_block_white_24dp"
+        android:orderInCategory="300"
+        android:title="@string/remove_text"
+        app:showAsAction="ifRoom|withText" />
+</menu>
