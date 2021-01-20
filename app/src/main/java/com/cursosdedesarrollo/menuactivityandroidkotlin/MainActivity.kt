@@ -7,14 +7,15 @@ import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import androidx.appcompat.widget.Toolbar
 
-import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val toolbar = findViewById<View>(R.id.toolbar) as Toolbar
         setSupportActionBar(toolbar)
         Log.d("app:MainActivity","onCreate")
         // Aplicacion application=(Aplicacion)getApplication
@@ -57,6 +58,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun informaUsuario(texto: String="Pulsado") {
         Log.d("App:", texto)
+        val toolbar = findViewById<View>(R.id.toolbar) as Toolbar
         Snackbar.make(toolbar, texto, Snackbar.LENGTH_LONG).show()
     }
 }
